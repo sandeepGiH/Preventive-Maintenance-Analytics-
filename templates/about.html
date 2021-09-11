@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Forecasting</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"> <img src='https://innodatatics.com/images/excelr-logo-small.png' width=200, height=48, align='left'> </a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"> <a class="nav-link" href="{{ url_for('home') }}">Home
+                <span class="sr-only">(current)</span>
+              </a> </li>
+					<li class="nav-item"> <a class="nav-link" href="{{ url_for('blower') }}">Blower</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="{{ url_for('labeller') }}">Labeller</a> </li>
+					<li class="nav-item"> <a class="nav-link" href="{{ url_for('contact') }}">Contact</a> </li>
+					<li class="nav-item active"> <a class="nav-link" href="{{ url_for('about') }}">About</a> </li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="">
+		<div class="bg-light">
+			<div class="container py-5">
+				<div class="row h-100 align-items-center py-5">
+					<div class="col-lg-6">
+						<h1 class="display-4">Goals and Objective</h1>
+						<p class="lead text-muted mb-1">Project Goals</p>
+						<ul>
+							<li>The overall goal is to reduce the production breakdown and suggest preventive maintenance schedule of plant machinery for Food and Beverage Industry</li>
+						</ul>
+						<p class="lead text-muted mb-0">Objective</p>
+						<ul>
+							<li>Extract real-time data to enable predictive maintenance</li>
+							<li>Reduce cost of planned and unplanned downtime</li>
+							<li>Monitor machine performance for accurate diagnostics</li>
+						</ul>
+						</p>
+					</div>
+					<div class="col-lg-6 d-none d-lg-block"><img src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/illus_kftyh4.png" alt="" class="img-fluid"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="bg-light pb-5">
+		<div class="container text-center">
+			<p class="font-italic text-muted mb-0">Copyright © 2017 Innodatatics Inc.</p>
+		</div>
+	</footer>
+</body>
